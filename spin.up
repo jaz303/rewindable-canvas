@@ -1,0 +1,4 @@
+watchify -o demo/bundle.js demo/main.js
+
+@cd demo
+static . -p 8089

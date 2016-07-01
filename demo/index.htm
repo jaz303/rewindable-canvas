@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title></title>
+  <style type='text/css'>
+   	* { box-sizing: border-box; }
+    canvas { border: 1px solid black; float: left; margin-right: 10px; }
+    input[type=range] {
+    	display: block;
+    	width: 610px;
+    	margin-bottom: 10px;
+    }
+    .operations {
+    	width: 300px;
+    	float: left;
+    	margin-right: 10px;
+    	border: 1px solid #303030;
+    	padding: 10px;
+    	font-family: monospace;
+    }
+    .operation {
+    	padding: 5px;
+    }
+    .is-highlighted {
+    	background: #ffffaa;
+    }
+  </style>
+  <script src='bundle.js'></script>
+</head>
+<body onload='init();'>
+  <input type='range' min='0' max='0' value='0' disabled>
+  <canvas id='canvas' width='300' height='300'></canvas>
+  <img src='tree.png' id='tree' style='display:none'>
+  <img src='train.png' id='train' style='display:none'>
+  <div class='operations'></div>
+</body>
+</html>
